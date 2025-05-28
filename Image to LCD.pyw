@@ -1,6 +1,6 @@
 from PIL import Image
 from time import sleep
-from tkinter import Tk, Frame, Entry, LabelFrame, Button, Label,StringVar
+from tkinter import Tk, Frame, LabelFrame, Button, Label
 from tkinter import filedialog
 import tkinter.font as tkFont
 
@@ -74,24 +74,6 @@ helv8 = tkFont.Font(family='Helvetica', size=8, weight=tkFont.BOLD)
 frame = Frame(window)
 frame.config(pady=15, background="#1c1c1c")
 frame.pack()
-
-labelText = StringVar(window)
-labelText.set("Test")
-
-#widthTextFrame = LabelFrame(frame, font=helv8, text="Enter width")
-#widthTextFrame.grid(row=0, column=0, padx=10, pady=10)
-#widthTextFrame.config(borderwidth=0)
-
-#widthBox=Entry(widthTextFrame)
-#widthBox.grid(row=0, column=0)
-
-
-#heightTextFrame = LabelFrame(frame,font=helv8,text="Enter height")
-#heightTextFrame.grid(row=0, column=2, padx=10, pady=10)
-#heightTextFrame.config(borderwidth=0)
-
-#heightBox=Entry(heightTextFrame)
-#heightBox.grid(row=0, column=0,)
 
 button = Button(frame, text="Choose file", width= 20, height=2, borderwidth=5, font=helv16, command = openFile)
 button.config(bg='green')
